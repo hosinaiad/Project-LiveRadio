@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sound Player </title>
+    <link rel="stylesheet" href="css/player.css">
+    <link rel="icon" href="img/Tripoli.jpg">
+</head>
+
+<body>
+
+    <main id="player">
+        <header>
+            <img src="img/Tripoli.jpg" id="tr">
+            <h1>LIVE RADIO</h1>
+            <p id="title_radio">
+                Radio (1)
+            </p>
+
+        </header>
+        <div id="content">
+            <article id="buttons">
+                <img src="icons/previous.ico" id="back" />
+                <img src="icons/play.ico" id="play_pause" />
+                <img src="icons/next.ico" id="next" />
+
+                <audio src="audio/bolblySound.mp3" id="audio_file"></audio>
+            </article>
+
+            <article id="volume">
+                <h1>Sound</h1>
+                <input type="range" id="volume_range">
+                <h1>Speed</h1>
+                <input type="range" id="volume_speed" min="0" max="200">
+                <!-- min="0" & max="200"  minimum & maximum instead default =100, wh we do that? Because playbackRate element for sound speed control can add value from 0 to 2 and 1 is default speed, that means if value less than 1 becomes more slowly and vesa versa.  -->
+            </article>
+
+            <article id="color">
+                <button id="color1"></button>
+                <button id="color2"></button>
+                <button id="color3"></button>
+                <button id="color4"></button>
+            </article>
+
+        </div>
+    </main>
+
+    <script src="script/player.js"></script>
+    <script src="script/volume.js"></script>
+    <script src="script/color.js"></script>
+</body>
+
+</html>
